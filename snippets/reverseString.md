@@ -2,10 +2,13 @@
 
 Reverses a string.
 
-Use array destructuring and `Array.reverse()` to reverse the order of the characters in the string.
-Combine characters to get a string using `join('')`.
+Use the spread operator (`...`) and `Array.prototype.reverse()` to reverse the order of the characters in the string.
+Combine characters to get a string using `String.prototype.join('')`.
 
 ```js
 const reverseString = str => [...str].reverse().join('');
-// reverseString('foobar') -> 'raboof'
+```
+
+```js
+reverseString('foobar'); // 'raboof'
 ```
